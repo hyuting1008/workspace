@@ -1,0 +1,12 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/module_usb_audio/audio_io/userbuffermanagement.c">
+  <fCall global="true" name="UserBufferManagementInit"/>
+  <fCall global="true" name="UserBufferManagementInit.nstackwords"/>
+  <fCall global="true" name="UserBufferManagementInit.maxcores"/>
+  <fCall global="true" name="UserBufferManagementInit.maxtimers"/>
+  <fCall global="true" name="UserBufferManagementInit.maxchanends"/>
+  <fCall global="true" name="UserBufferManagement"/>
+  <fCall global="true" name="UserBufferManagement.nstackwords"/>
+  <fCall global="true" name="UserBufferManagement.maxcores"/>
+  <fCall global="true" name="UserBufferManagement.maxtimers"/>
+  <fCall global="true" name="UserBufferManagement.maxchanends"/>
+</preCompilationAnalysis>

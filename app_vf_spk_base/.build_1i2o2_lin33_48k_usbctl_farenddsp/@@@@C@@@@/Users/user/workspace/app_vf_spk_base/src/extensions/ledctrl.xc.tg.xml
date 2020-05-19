@@ -1,0 +1,289 @@
+<taskgraph>
+<task>
+  <name>delay_seconds</name>
+  <inFunction>delay_seconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>delay_milliseconds</name>
+  <inFunction>delay_milliseconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>delay_microseconds</name>
+  <inFunction>delay_microseconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>atanl</name>
+  <inFunction>atanl</inFunction>
+</task>
+<task>
+  <name>cosl</name>
+  <inFunction>cosl</inFunction>
+</task>
+<task>
+  <name>sinl</name>
+  <inFunction>sinl</inFunction>
+</task>
+<task>
+  <name>tanl</name>
+  <inFunction>tanl</inFunction>
+</task>
+<task>
+  <name>tanhl</name>
+  <inFunction>tanhl</inFunction>
+</task>
+<task>
+  <name>frexpl</name>
+  <inFunction>frexpl</inFunction>
+</task>
+<task>
+  <name>modfl</name>
+  <inFunction>modfl</inFunction>
+</task>
+<task>
+  <name>ceill</name>
+  <inFunction>ceill</inFunction>
+</task>
+<task>
+  <name>fabsl</name>
+  <inFunction>fabsl</inFunction>
+</task>
+<task>
+  <name>floorl</name>
+  <inFunction>floorl</inFunction>
+</task>
+<task>
+  <name>log1pl</name>
+  <inFunction>log1pl</inFunction>
+</task>
+<task>
+  <name>expm1l</name>
+  <inFunction>expm1l</inFunction>
+</task>
+<task>
+  <name>acosl</name>
+  <inFunction>acosl</inFunction>
+</task>
+<task>
+  <name>asinl</name>
+  <inFunction>asinl</inFunction>
+</task>
+<task>
+  <name>atan2l</name>
+  <inFunction>atan2l</inFunction>
+</task>
+<task>
+  <name>coshl</name>
+  <inFunction>coshl</inFunction>
+</task>
+<task>
+  <name>sinhl</name>
+  <inFunction>sinhl</inFunction>
+</task>
+<task>
+  <name>expl</name>
+  <inFunction>expl</inFunction>
+</task>
+<task>
+  <name>ldexpl</name>
+  <inFunction>ldexpl</inFunction>
+</task>
+<task>
+  <name>logl</name>
+  <inFunction>logl</inFunction>
+</task>
+<task>
+  <name>log10l</name>
+  <inFunction>log10l</inFunction>
+</task>
+<task>
+  <name>log2</name>
+  <inFunction>log2</inFunction>
+</task>
+<task>
+  <name>log2f</name>
+  <inFunction>log2f</inFunction>
+</task>
+<task>
+  <name>log2l</name>
+  <inFunction>log2l</inFunction>
+</task>
+<task>
+  <name>powl</name>
+  <inFunction>powl</inFunction>
+</task>
+<task>
+  <name>sqrtl</name>
+  <inFunction>sqrtl</inFunction>
+</task>
+<task>
+  <name>fmodl</name>
+  <inFunction>fmodl</inFunction>
+</task>
+<task>
+  <name>hypotl</name>
+  <inFunction>hypotl</inFunction>
+</task>
+<task>
+  <name>copysignl</name>
+  <inFunction>copysignl</inFunction>
+</task>
+<task>
+  <name>nanl</name>
+  <inFunction>nanl</inFunction>
+</task>
+<task>
+  <name>ilogbl</name>
+  <inFunction>ilogbl</inFunction>
+</task>
+<task>
+  <name>logbl</name>
+  <inFunction>logbl</inFunction>
+</task>
+<task>
+  <name>asinhl</name>
+  <inFunction>asinhl</inFunction>
+</task>
+<task>
+  <name>cbrtl</name>
+  <inFunction>cbrtl</inFunction>
+</task>
+<task>
+  <name>nextafterl</name>
+  <inFunction>nextafterl</inFunction>
+</task>
+<task>
+  <name>nexttoward</name>
+  <inFunction>nexttoward</inFunction>
+</task>
+<task>
+  <name>nexttowardf</name>
+  <inFunction>nexttowardf</inFunction>
+</task>
+<task>
+  <name>nexttowardl</name>
+  <inFunction>nexttowardl</inFunction>
+</task>
+<task>
+  <name>rintl</name>
+  <inFunction>rintl</inFunction>
+</task>
+<task>
+  <name>scalbnl</name>
+  <inFunction>scalbnl</inFunction>
+</task>
+<task>
+  <name>exp2l</name>
+  <inFunction>exp2l</inFunction>
+</task>
+<task>
+  <name>scalblnl</name>
+  <inFunction>scalblnl</inFunction>
+</task>
+<task>
+  <name>tgammal</name>
+  <inFunction>tgammal</inFunction>
+</task>
+<task>
+  <name>nearbyintl</name>
+  <inFunction>nearbyintl</inFunction>
+</task>
+<task>
+  <name>lrintl</name>
+  <inFunction>lrintl</inFunction>
+</task>
+<task>
+  <name>llrintl</name>
+  <inFunction>llrintl</inFunction>
+</task>
+<task>
+  <name>roundl</name>
+  <inFunction>roundl</inFunction>
+</task>
+<task>
+  <name>lroundl</name>
+  <inFunction>lroundl</inFunction>
+</task>
+<task>
+  <name>llroundl</name>
+  <inFunction>llroundl</inFunction>
+</task>
+<task>
+  <name>truncl</name>
+  <inFunction>truncl</inFunction>
+</task>
+<task>
+  <name>remquol</name>
+  <inFunction>remquol</inFunction>
+</task>
+<task>
+  <name>fdiml</name>
+  <inFunction>fdiml</inFunction>
+</task>
+<task>
+  <name>fmaxl</name>
+  <inFunction>fmaxl</inFunction>
+</task>
+<task>
+  <name>fminl</name>
+  <inFunction>fminl</inFunction>
+</task>
+<task>
+  <name>fmal</name>
+  <inFunction>fmal</inFunction>
+</task>
+<task>
+  <name>acoshl</name>
+  <inFunction>acoshl</inFunction>
+</task>
+<task>
+  <name>atanhl</name>
+  <inFunction>atanhl</inFunction>
+</task>
+<task>
+  <name>remainderl</name>
+  <inFunction>remainderl</inFunction>
+</task>
+<task>
+  <name>lgammal</name>
+  <inFunction>lgammal</inFunction>
+</task>
+<task>
+  <name>erfl</name>
+  <inFunction>erfl</inFunction>
+</task>
+<task>
+  <name>erfcl</name>
+  <inFunction>erfcl</inFunction>
+</task>
+<task>
+  <name>led12_high</name>
+  <inFunction>led12_high</inFunction>
+</task>
+<task>
+  <name>led12_low</name>
+  <inFunction>led12_low</inFunction>
+</task>
+<task>
+  <name>all_leds_low</name>
+  <inFunction>all_leds_low</inFunction>
+</task>
+<task>
+  <name>all_leds_high</name>
+  <inFunction>all_leds_high</inFunction>
+</task>
+<task>
+  <name>SetLed</name>
+  <inFunction>SetLed</inFunction>
+</task>
+<task>
+  <name>led_init_chanend</name>
+  <inFunction>led_init_chanend</inFunction>
+</task>
+<task>
+  <name>led_controller</name>
+  <inFunction>led_controller</inFunction>
+</task>
+</taskgraph>

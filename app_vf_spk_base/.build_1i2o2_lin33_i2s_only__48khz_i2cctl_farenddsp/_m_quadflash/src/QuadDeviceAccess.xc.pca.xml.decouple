@@ -1,0 +1,446 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/module_quadflash/src/QuadDeviceAccess.xc">
+<fDef name="do_to_byte" global="false" unit="C:/Users/user/workspace/module_quadflash/src/QuadDeviceAccess.xc" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="delay_microseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="delay_milliseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="delay_seconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="fl_int_DriveCSLow" global="true" noreturn="false" doNotSpecialize="true" numParams="0"/>
+<fDef name="fl_int_driveCSHigh" global="true" noreturn="false" doNotSpecialize="true" numParams="0"/>
+<fDef name="fl_int_endQSPIAction" global="true" noreturn="false" doNotSpecialize="true" numParams="0"/>
+<fDef name="fl_int_eraseSector" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="fl_int_getJEDEC" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="fl_int_isBusy" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="fl_int_qspiDividerOverride" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="fl_int_qspiFinish" global="true" noreturn="false" doNotSpecialize="false" numParams="0"/>
+<fDef name="fl_int_qspiInit" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="fl_int_quadEnable" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="fl_int_read" global="true" noreturn="false" doNotSpecialize="false" numParams="4"/>
+<fDef name="fl_int_readStatusRegister" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="fl_int_sendSingleByteCommand" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="fl_int_setupQSPIAction" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="fl_int_waitWhileWriting" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="fl_int_write" global="true" noreturn="false" doNotSpecialize="false" numParams="4"/>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_bitrev" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_thread_fast" global="true" numArgs="0">
+</fCall>
+<fCall name="fl_int_DriveCSLow" global="true" numArgs="0">
+</fCall>
+<fCall name="__builtin_partout" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="4"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_clk" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partout" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="28"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_start_clock" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_stop_clock" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="fl_int_driveCSHigh" global="true" numArgs="0">
+</fCall>
+<fCall name="__builtin_set_thread_norm" global="true" numArgs="0">
+</fCall>
+<fCall name="__builtin_set_port_use" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="8"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_use" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="8"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_use" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="8"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_clock_on" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_clk_div" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="configure_port_clock_output" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_clock_off" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_use" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_use" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_port_use" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_set_clk_div" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="fl_int_setupQSPIAction" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="0" caller="fl_int_quadEnable" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="fl_int_endQSPIAction" global="true" numArgs="0">
+</fCall>
+<fCall name="fl_int_setupQSPIAction" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="0" caller="fl_int_getJEDEC" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="do_to_byte" global="false" unit="C:/Users/user/workspace/module_quadflash/src/QuadDeviceAccess.xc" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="do_to_byte" global="false" unit="C:/Users/user/workspace/module_quadflash/src/QuadDeviceAccess.xc" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="fl_int_endQSPIAction" global="true" numArgs="0">
+</fCall>
+<fCall name="do_to_byte" global="false" unit="C:/Users/user/workspace/module_quadflash/src/QuadDeviceAccess.xc" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="fl_int_setupQSPIAction" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="0" caller="fl_int_sendSingleByteCommand" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="fl_int_endQSPIAction" global="true" numArgs="0">
+</fCall>
+<fCall name="fl_int_setupQSPIAction" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="0" caller="fl_int_eraseSector" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="fl_int_endQSPIAction" global="true" numArgs="0">
+</fCall>
+<fCall name="fl_int_setupQSPIAction" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="0" caller="fl_int_read" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_byterev" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_byterev" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_partin" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="8"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="fl_int_endQSPIAction" global="true" numArgs="0">
+</fCall>
+<fCall name="fl_int_setupQSPIAction" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="0" caller="fl_int_write" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_sync" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="fl_int_endQSPIAction" global="true" numArgs="0">
+</fCall>
+<fCall name="fl_int_setupQSPIAction" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="0" caller="fl_int_readStatusRegister" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="fl_int_endQSPIAction" global="true" numArgs="0">
+</fCall>
+<fCall name="do_to_byte" global="false" unit="C:/Users/user/workspace/module_quadflash/src/QuadDeviceAccess.xc" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="fl_int_readStatusRegister" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="0" caller="fl_int_isBusy" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="fl_int_isBusy" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="0" caller="fl_int_waitWhileWriting" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_timer_after" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+</preCompilationAnalysis>

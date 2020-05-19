@@ -1,0 +1,12 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/lib_xbeclear/src/beclear_init.S">
+  <fCall global="true" name="imem_tile_0_ptr"/>
+  <fCall global="true" name="imem_tile_0_ptr.nstackwords"/>
+  <fCall global="true" name="imem_tile_0_ptr.maxcores"/>
+  <fCall global="true" name="imem_tile_0_ptr.maxtimers"/>
+  <fCall global="true" name="imem_tile_0_ptr.maxchanends"/>
+  <fCall global="true" name="imem_tile_1_ptr"/>
+  <fCall global="true" name="imem_tile_1_ptr.nstackwords"/>
+  <fCall global="true" name="imem_tile_1_ptr.maxcores"/>
+  <fCall global="true" name="imem_tile_1_ptr.maxtimers"/>
+  <fCall global="true" name="imem_tile_1_ptr.maxchanends"/>
+</preCompilationAnalysis>

@@ -1,0 +1,56 @@
+# For xSCOPE, set the environment variables from xTimeComposer
+
+# Eclipse project strips a level of directories
+ifeq ($(wildcard ../../../lib_device_control),)
+    # Not imported into eclipse
+    LIB_DEVICE_CONTROL = ../../../../../lib_device_control
+    MODULE_VOCALFUSION = ../../../../../sw_vocalfusion
+else
+    # Imported into eclipse
+    LIB_DEVICE_CONTROL = ../../../..
+    MODULE_VOCALFUSION = ../../../..
+endif
+LIB_XBECLEAR = ../../../..
+
+COMMON = \
+  -DBECLEAR_HOST=1 \
+	-I $(LIB_DEVICE_CONTROL)/lib_device_control/api \
+	-I $(LIB_DEVICE_CONTROL)/lib_device_control/src \
+	-I $(LIB_DEVICE_CONTROL)/lib_device_control/host \
+	-I $(MODULE_VOCALFUSION)/module_vocalfusion/include \
+	-I $(LIB_XBECLEAR)/lib_xbeclear/inc/xmos \
+	-I $(LIB_XBECLEAR)/lib_xbeclear/api \
+	-I /opt/local/include \
+	$(LIB_DEVICE_CONTROL)/lib_device_control/host/util.c \
+	host.c \
+	-lreadline \
+	-lncurses
+
+all: vfctrl_xscope vfctrl_usb
+
+vfctrl_usb:
+	mkdir -p bin
+	cd src ; gcc -Wall -g -D HOST_APP -o ../bin/vfctrl_usb \
+	-DUSE_USB=1 \
+	-I ../libusb/OSX64 \
+	../libusb/OSX64/libusb-1.0.0.dylib \
+	$(LIB_DEVICE_CONTROL)/lib_device_control/host/device_access_usb.c \
+	$(COMMON);
+	install_name_tool -change \
+	"/usr/local/lib/libusb-1.0.0.dylib" \
+	"@loader_path/../libusb/OSX64/libusb-1.0.0.dylib" bin/vfctrl_usb
+
+vfctrl_xscope:
+	mkdir -p bin
+	cd src ; gcc -Wall -g -D HOST_APP -o ../bin/vfctrl_xscope \
+	-DUSE_XSCOPE=1 \
+	${XMOS_TOOL_PATH}/lib/xscope_endpoint.so \
+	$(LIB_DEVICE_CONTROL)/lib_device_control/host/device_access_xscope.c \
+	-I ${XMOS_TOOL_PATH}/include \
+	$(COMMON);
+	install_name_tool -change \
+	"xscope_endpoint.so" \
+	"$(XMOS_TOOL_PATH)/lib/xscope_endpoint.so" bin/vfctrl_xscope
+
+clean:
+	rm -rf bin

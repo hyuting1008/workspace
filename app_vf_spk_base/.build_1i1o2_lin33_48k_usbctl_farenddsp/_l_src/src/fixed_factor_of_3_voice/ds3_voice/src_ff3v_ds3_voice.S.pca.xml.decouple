@@ -1,0 +1,15 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/lib_src/src/fixed_factor_of_3_voice/ds3_voice/src_ff3v_ds3_voice.S">
+  <fCall global="true" name="src_ds3_voice_add_sample"/>
+  <fCall global="true" name="src_ds3_voice_add_sample.nstackwords"/>
+  <fCall global="true" name="src_ds3_voice_add_sample.maxcores"/>
+  <fCall global="true" name="src_ds3_voice_add_sample.maxtimers"/>
+  <fCall global="true" name="src_ds3_voice_add_sample.maxchanends"/>
+  <fCall global="true" name="src_ds3_voice_add_final_sample"/>
+  <fCall global="true" name="src_ds3_voice_add_final_sample.nstackwords"/>
+  <fCall global="true" name="src_ds3_voice_add_final_sample.maxcores"/>
+  <fCall global="true" name="src_ds3_voice_add_final_sample.maxtimers"/>
+  <fCall global="true" name="src_ds3_voice_add_final_sample.maxchanends"/>
+  <fCall global="true" name="src_ff3v_fir_impl"/>
+  <fCall global="true" name="src_ff3v_fir_comp_ds"/>
+  <fCall global="true" name="src_ff3v_fir_comp_q_ds"/>
+</preCompilationAnalysis>

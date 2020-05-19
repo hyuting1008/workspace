@@ -1,0 +1,43 @@
+FLAGS = $(MISSION_INIT_BUILD_FLAGS) -DSENSORY_KEYWORD=1
+
+# Basic keyword, raises IO for Alexa RPi interrupt, running at 16kHz
+FLAGS_1i1o2_lin100_keyword = $(FLAGS) -DBECLEAR_SMARTTV=1 $(I1O2) $(FREQ16K)  -DSENSORY_KEYWORD_PI_DEMO=1
+ifeq ($(LIN100), 1)
+XCC_FLAGS_1i1o2_lin100_keyword = $(FLAGS_1i1o2_lin100_keyword)
+endif
+XCC_FLAGS_1i1o2_lin33_keyword = $(FLAGS_1i1o2_lin100_keyword) -DMIC_GEO_L33
+
+# Basic keyword, raise IO for Alexa RPi interrupt, running at 48kHz
+FLAGS_1i1o2_lin100_keyword_48khz = $(FLAGS) -DBECLEAR_SMARTTV=1 $(I1O2) $(FREQ48K) -DSENSORY_PI_DEMO=1
+ifeq ($(LIN100), 1)
+XCC_FLAGS_1i1o2_lin100_keyword_48khz = $(FLAGS_1i1o2_lin100_keyword_48khz)
+endif
+XCC_FLAGS_1i1o2_lin33_keyword_48khz = $(FLAGS_1i1o2_lin100_keyword_48khz) -DMIC_GEO_L33
+
+# Basic Keyword, 6 channels, running at 16kHz
+FLAGS_1i6o2_lin100_keyword = $(FLAGS) -DBECLEAR_SMARTTV=1 $(I6O2) $(FREQ16K) 
+ifeq ($(LIN100), 1)
+XCC_FLAGS_1i6o2_lin100_keyword = $(FLAGS_1i6o2_lin100_keyword)
+endif
+XCC_FLAGS_1i6o2_lin33_keyword = $(FLAGS_1i6o2_lin100_keyword) -DMIC_GEO_L33
+
+# Keyword, Stereo (ASR + Comms), uses VAD to mark end of keyword and mutes (ASR) output, running at 16kHz
+FLAGS_1i2o2_lin100_keyword_mute = $(FLAGS) -DBECLEAR_SMARTTV=1 $(I2O2) $(FREQ16K)  -DSENSORY_KEYWORD_MUTE=1 -DBECLEAR_OUTPUT_ASR=1 
+ifeq ($(LIN100), 1)
+XCC_FLAGS_1i2o2_lin100_keyword_mute = $(FLAGS_1i2o2_lin100_keyword_mute)
+endif
+XCC_FLAGS_1i2o2_lin33_keyword_mute = $(FLAGS_1i2o2_lin100_keyword_mute) -DMIC_GEO_L33
+
+# Keyword Stereo (ASR + Comms), uses VAD to mark end of keyword and mutes (ASR) output, running at 48kHz
+FLAGS_1i2o2_lin100_keyword_mute_48khz = $(FLAGS) -DBECLEAR_SMARTTV=1 $(I2O2) $(FREQ48K)  -DSENSORY_KEYWORD_MUTE=1 -DBECLEAR_OUTPUT_ASR=1
+ifeq ($(LIN100), 1)
+XCC_FLAGS_1i2o2_lin100_keyword_mute_48khz = $(FLAGS_1i2o2_lin100_keyword_mute_48khz)
+endif
+XCC_FLAGS_1i2o2_lin33_keyword_mute_48khz = $(FLAGS_1i2o2_lin100_keyword_mute_48khz) -DMIC_GEO_L33
+
+# Keyword, Stereo (ASR + Comms), uses VAD to mark end of keyword and mutes output, running at 16kHz, usb control enabled
+FLAGS_1i2o2_lin100_keyword_mute_usbctl = $(FLAGS) -DBECLEAR_SMARTTV=1 $(I2O2) $(FREQ16K)  -DBECLEAR_CONTROL_USB=1 -DUSB_CONTROL_DESCS=1 -DBECLEAR_OUTPUT_ASR=1 -DSENSORY_KEYWORD_MUTE=1
+ifeq ($(LIN100), 1)
+XCC_FLAGS_1i2o2_lin100_keyword_mute_usbctl = $(FLAGS_1i2o2_lin100_keyword_mute_usbctl)
+endif
+XCC_FLAGS_1i2o2_lin33_keyword_mute_usbctl = $(FLAGS_1i2o2_lin100_keyword_mute_usbctl) -DMIC_GEO_L33

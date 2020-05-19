@@ -1,0 +1,7 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/lib_src/src/fixed_factor_of_3_voice/src_ff3v_fir.S">
+  <fCall global="true" name="src_ff3v_fir_impl"/>
+  <fCall global="true" name="src_ff3v_fir_impl.nstackwords"/>
+  <fCall global="true" name="src_ff3v_fir_impl.maxcores"/>
+  <fCall global="true" name="src_ff3v_fir_impl.maxtimers"/>
+  <fCall global="true" name="src_ff3v_fir_impl.maxchanends"/>
+</preCompilationAnalysis>

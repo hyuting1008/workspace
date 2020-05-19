@@ -1,0 +1,12 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/module_usb_audio/pdm_mics/pdm_mic_user.c">
+  <fCall global="true" name="user_pdm_init"/>
+  <fCall global="true" name="user_pdm_init.nstackwords"/>
+  <fCall global="true" name="user_pdm_init.maxcores"/>
+  <fCall global="true" name="user_pdm_init.maxtimers"/>
+  <fCall global="true" name="user_pdm_init.maxchanends"/>
+  <fCall global="true" name="user_pdm_process"/>
+  <fCall global="true" name="user_pdm_process.nstackwords"/>
+  <fCall global="true" name="user_pdm_process.maxcores"/>
+  <fCall global="true" name="user_pdm_process.maxtimers"/>
+  <fCall global="true" name="user_pdm_process.maxchanends"/>
+</preCompilationAnalysis>

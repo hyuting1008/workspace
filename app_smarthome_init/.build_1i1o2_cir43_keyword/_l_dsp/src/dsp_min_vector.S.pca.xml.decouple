@@ -1,0 +1,7 @@
+<preCompilationAnalysis file="/Users/chuangwilliam/Documents/xmos_workspaces/xvf3000_sandbox/lib_dsp/src/dsp_min_vector.S">
+  <fCall global="true" name="dsp_vector_minv"/>
+  <fCall global="true" name="dsp_vector_minv.nstackwords"/>
+  <fCall global="true" name="dsp_vector_minv.maxcores"/>
+  <fCall global="true" name="dsp_vector_minv.maxtimers"/>
+  <fCall global="true" name="dsp_vector_minv.maxchanends"/>
+</preCompilationAnalysis>

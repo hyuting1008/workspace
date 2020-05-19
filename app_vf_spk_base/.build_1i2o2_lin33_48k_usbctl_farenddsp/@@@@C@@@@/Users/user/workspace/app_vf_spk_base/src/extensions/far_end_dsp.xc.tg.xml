@@ -1,0 +1,53 @@
+<taskgraph>
+<task>
+  <name>delay_seconds</name>
+  <inFunction>delay_seconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>delay_milliseconds</name>
+  <inFunction>delay_milliseconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>delay_microseconds</name>
+  <inFunction>delay_microseconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>_safe_memcmp</name>
+  <inFunction>_safe_memcmp</inFunction>
+</task>
+<task>
+  <name>_safe_memmove</name>
+  <inFunction>_safe_memmove</inFunction>
+</task>
+<task>
+  <name>_safe_memset</name>
+  <inFunction>_safe_memset</inFunction>
+</task>
+<task>
+  <name>dsp_math_cos</name>
+  <inFunction>dsp_math_cos</inFunction>
+</task>
+<task>
+  <name>dsp_math_sinh</name>
+  <inFunction>dsp_math_sinh</inFunction>
+</task>
+<task>
+  <name>dsp_math_cosh</name>
+  <inFunction>dsp_math_cosh</inFunction>
+</task>
+<task>
+  <name>attenuator</name>
+  <inFunction>attenuator</inFunction>
+</task>
+<task>
+  <name>control_server_eq_check</name>
+  <inFunction>control_server_eq_check</inFunction>
+</task>
+<task>
+  <name>far_end_dsp</name>
+  <inFunction>far_end_dsp</inFunction>
+</task>
+</taskgraph>

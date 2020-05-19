@@ -1,0 +1,1561 @@
+15:05:33 **** Incremental Build of configuration 1i0o0_lin33_i2s_only_master_48khz_i2cctl for project app_vf_spk_base ****
+xmake CONFIG=1i0o0_lin33_i2s_only_master_48khz_i2cctl all 
+Checking build modules
+Using build modules: module_vocalfusion module_quadflash lib_i2c(4.0.1) lib_mic_array(3.1.1) lib_logging(2.1.1) module_dfu module_usb_audio module_usb_midi lib_device_control(3.2.1) lib_src(1.1.1) lib_dsp(4.0.0) lib_spi(3.0.3) module_xud module_usb_device module_usb_shared lib_xbeclear(1.1.2) module_beclear_conf lib_xassert(3.0.1) module_queue
+Analyzing userevents_default.c
+Analyzing quadflashlib.c
+Analyzing debug_printf.c
+Analyzing flash_interface.c
+Analyzing flashlib_user.c
+Analyzing userbuffermanagement.c
+Analyzing audiostream.c
+Analyzing endpoint0.c
+Analyzing vendorrequests.c
+Analyzing hostactive.c
+Analyzing pdm_mic_user.c
+Analyzing audioports.c
+Analyzing decouple_interrupt.c
+Analyzing get_adc_counts.c
+Analyzing xuduser.c
+Analyzing src_ff3_ds3.c
+Analyzing src_ff3_os3.c
+Analyzing src_mrhf_filter_defs.c
+Analyzing src_mrhf_fir.c
+Analyzing src_mrhf_int_arithmetic.c
+Analyzing src_mrhf_asrc.c
+Analyzing src_mrhf_asrc_wrapper.c
+Analyzing src_mrhf_ssrc.c
+Analyzing src_mrhf_ssrc_wrapper.c
+Analyzing dsp_adaptive.c
+Analyzing dsp_design.c
+Analyzing dsp_filters.c
+Analyzing dsp_math.c
+Analyzing dsp_matrix.c
+Analyzing dsp_statistics.c
+Analyzing dsp_tables.c
+Analyzing dsp_vector.c
+Analyzing beclear_ambiphone.c
+Analyzing beclear_srtvbf.c
+Analyzing audiohw.xc
+Analyzing far_end_dsp.xc
+Analyzing ledctrl.xc
+Analyzing userevents.xc
+Analyzing beclear_int.xc
+Analyzing dfu_control.xc
+Analyzing keyword.xc
+Analyzing testgen.xc
+Analyzing vendorrequests.xc
+Analyzing vf_control.xc
+Analyzing QuadDeviceAccess.xc
+Analyzing i2c_master.xc
+Analyzing i2c_master_async.xc
+Analyzing i2c_master_ext.xc
+Analyzing i2c_master_single_port.xc
+Analyzing i2c_slave.xc
+Analyzing decimator_interface.xc
+Analyzing hires_delay.xc
+Analyzing pdm.xc
+Analyzing fir_coefs.xc
+Analyzing dfu.xc
+Analyzing main.xc
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+Analyzing reboot.xc
+Analyzing warnings.xc
+Analyzing audio_io.xc
+Analyzing clockgen.xc
+Analyzing audiorequests.xc
+Analyzing dbcalc.xc
+Analyzing mixer.xc
+Analyzing pdm_mic.xc
+Analyzing audioports.xc
+Analyzing archU_powerSaving.xc
+Analyzing decouple.xc
+Analyzing testct_byref.xc
+Analyzing usb_buffer.xc
+Analyzing xc_ptr.xc
+Analyzing midiinparse.xc
+Analyzing midioutparse.xc
+Analyzing usb_midi.xc
+Analyzing usb_midi_support.xc
+Analyzing control.xc
+Analyzing resource_table.xc
+Analyzing src_ff3v_fir.xc
+Analyzing dsp_complex.xc
+Analyzing dsp_dct.xc
+Analyzing dsp_idct.xc
+Analyzing dsp_fft.xc
+Analyzing dsp_fft_real.xc
+Analyzing spi_async.xc
+Analyzing spi_slave.xc
+Analyzing spi_sync.xc
+Analyzing XUD_EpFunctions.xc
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+Analyzing XUD_Ports.xc
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+Analyzing usb_device.xc
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+Analyzing usb_std_requests.xc
+Analyzing beclear_main_ambiphone.xc
+Analyzing beclear_main_srtvbf.xc
+Analyzing data_over_channel.xc
+Analyzing file_over_xscope.xc
+Analyzing xassert.xc
+Analyzing queue.xc
+Analyzing decimate_to_pcm_4ch.S
+Analyzing pdm_rx.S
+Analyzing write_sswitch_reg_blind.S
+Analyzing lock.S
+Analyzing fastmix.S
+Analyzing src_ff3_fir_inner_loop_asm.S
+Analyzing src_ff3v_fir.S
+Analyzing src_ff3v_ds3_voice.S
+Analyzing src_ff3v_us3_voice.S
+Analyzing src_mrhf_adfir_inner_loop_asm.S
+Analyzing src_mrhf_dither_maths_asm.S
+Analyzing src_mrhf_fir_inner_loop_asm.S
+Analyzing src_mrhf_fir_os_inner_loop_asm.S
+Analyzing src_mrhf_spline_coeff_gen_inner_loop_asm.S
+Analyzing dsp_complex_add_vector.S
+Analyzing dsp_complex_fir.S
+Analyzing dsp_complex_mul_vector.S
+Analyzing dsp_fast_atan.S
+Analyzing dsp_logistics.S
+Analyzing dsp_min_vector.S
+Analyzing dsp_bfp_bit_reverse_shl.S
+Analyzing dsp_bfp_cls.S
+Analyzing dsp_bfp_shl.S
+Analyzing dsp_fft_bit_reverse.S
+Analyzing dsp_fft_forward.S
+Analyzing dsp_fft_inverse.S
+Analyzing dsp_fft_merge_spectra.S
+Analyzing dsp_fft_real_fix.S
+Analyzing dsp_fft_split_spectrum.S
+Analyzing dsp_fft_zero_reverse_forward.S
+Analyzing dsp_long_short_conversion.S
+Analyzing XUD_EpFuncs.S
+Analyzing beclear_init.S
+Propagating analysis
+Creating dependencies for beclear_init.S
+Creating dependencies for XUD_EpFuncs.S
+Creating dependencies for dsp_long_short_conversion.S
+Creating dependencies for dsp_fft_zero_reverse_forward.S
+Creating dependencies for dsp_fft_split_spectrum.S
+Creating dependencies for dsp_fft_real_fix.S
+Creating dependencies for dsp_fft_merge_spectra.S
+Creating dependencies for dsp_fft_inverse.S
+Creating dependencies for dsp_fft_forward.S
+Creating dependencies for dsp_fft_bit_reverse.S
+Creating dependencies for dsp_bfp_shl.S
+Creating dependencies for dsp_bfp_cls.S
+Creating dependencies for dsp_bfp_bit_reverse_shl.S
+Creating dependencies for dsp_min_vector.S
+Creating dependencies for dsp_logistics.S
+Creating dependencies for dsp_fast_atan.S
+Creating dependencies for dsp_complex_mul_vector.S
+Creating dependencies for dsp_complex_fir.S
+Creating dependencies for dsp_complex_add_vector.S
+Creating dependencies for src_mrhf_spline_coeff_gen_inner_loop_asm.S
+Creating dependencies for src_mrhf_fir_os_inner_loop_asm.S
+Creating dependencies for src_mrhf_fir_inner_loop_asm.S
+Creating dependencies for src_mrhf_dither_maths_asm.S
+Creating dependencies for src_mrhf_adfir_inner_loop_asm.S
+Creating dependencies for src_ff3v_us3_voice.S
+Creating dependencies for src_ff3v_ds3_voice.S
+Creating dependencies for src_ff3v_fir.S
+Creating dependencies for src_ff3_fir_inner_loop_asm.S
+Creating dependencies for fastmix.S
+Creating dependencies for lock.S
+Creating dependencies for write_sswitch_reg_blind.S
+Creating dependencies for pdm_rx.S
+Creating dependencies for decimate_to_pcm_4ch.S
+Creating dependencies for queue.xc
+Creating dependencies for xassert.xc
+Creating dependencies for file_over_xscope.xc
+Creating dependencies for data_over_channel.xc
+Creating dependencies for beclear_main_srtvbf.xc
+Creating dependencies for beclear_main_ambiphone.xc
+Creating dependencies for usb_std_requests.xc
+Creating dependencies for usb_device.xc
+Creating dependencies for XUD_Ports.xc
+Creating dependencies for XUD_EpFunctions.xc
+Creating dependencies for spi_sync.xc
+Creating dependencies for spi_slave.xc
+Creating dependencies for spi_async.xc
+Creating dependencies for dsp_fft_real.xc
+Creating dependencies for dsp_fft.xc
+Creating dependencies for dsp_idct.xc
+Creating dependencies for dsp_dct.xc
+Creating dependencies for dsp_complex.xc
+Creating dependencies for src_ff3v_fir.xc
+Creating dependencies for resource_table.xc
+Creating dependencies for control.xc
+Creating dependencies for usb_midi_support.xc
+Creating dependencies for usb_midi.xc
+Creating dependencies for midioutparse.xc
+Creating dependencies for midiinparse.xc
+Creating dependencies for xc_ptr.xc
+Creating dependencies for usb_buffer.xc
+Creating dependencies for testct_byref.xc
+Creating dependencies for decouple.xc
+Creating dependencies for archU_powerSaving.xc
+Creating dependencies for audioports.xc
+Creating dependencies for pdm_mic.xc
+Creating dependencies for mixer.xc
+Creating dependencies for dbcalc.xc
+Creating dependencies for audiorequests.xc
+Creating dependencies for clockgen.xc
+Creating dependencies for audio_io.xc
+Creating dependencies for warnings.xc
+Creating dependencies for reboot.xc
+Creating dependencies for main.xc
+Creating dependencies for dfu.xc
+Creating dependencies for fir_coefs.xc
+Creating dependencies for pdm.xc
+Creating dependencies for hires_delay.xc
+Creating dependencies for decimator_interface.xc
+Creating dependencies for i2c_slave.xc
+Creating dependencies for i2c_master_single_port.xc
+Creating dependencies for i2c_master_ext.xc
+Creating dependencies for i2c_master_async.xc
+Creating dependencies for i2c_master.xc
+Creating dependencies for QuadDeviceAccess.xc
+Creating dependencies for vf_control.xc
+Creating dependencies for vendorrequests.xc
+Creating dependencies for testgen.xc
+Creating dependencies for keyword.xc
+Creating dependencies for dfu_control.xc
+Creating dependencies for beclear_int.xc
+Creating dependencies for userevents.xc
+Creating dependencies for ledctrl.xc
+Creating dependencies for far_end_dsp.xc
+Creating dependencies for audiohw.xc
+Creating dependencies for beclear_srtvbf.c
+Creating dependencies for beclear_ambiphone.c
+Creating dependencies for dsp_vector.c
+Creating dependencies for dsp_tables.c
+Creating dependencies for dsp_statistics.c
+Creating dependencies for dsp_matrix.c
+Creating dependencies for dsp_math.c
+Creating dependencies for dsp_filters.c
+Creating dependencies for dsp_design.c
+Creating dependencies for dsp_adaptive.c
+Creating dependencies for src_mrhf_ssrc_wrapper.c
+Creating dependencies for src_mrhf_ssrc.c
+Creating dependencies for src_mrhf_asrc_wrapper.c
+Creating dependencies for src_mrhf_asrc.c
+Creating dependencies for src_mrhf_int_arithmetic.c
+Creating dependencies for src_mrhf_fir.c
+Creating dependencies for src_mrhf_filter_defs.c
+Creating dependencies for src_ff3_os3.c
+Creating dependencies for src_ff3_ds3.c
+Creating dependencies for xuduser.c
+Creating dependencies for get_adc_counts.c
+Creating dependencies for decouple_interrupt.c
+Creating dependencies for audioports.c
+Creating dependencies for pdm_mic_user.c
+Creating dependencies for hostactive.c
+Creating dependencies for vendorrequests.c
+Creating dependencies for endpoint0.c
+Creating dependencies for audiostream.c
+Creating dependencies for userbuffermanagement.c
+Creating dependencies for flashlib_user.c
+Creating dependencies for flash_interface.c
+Creating dependencies for debug_printf.c
+Creating dependencies for quadflashlib.c
+Creating dependencies for userevents_default.c
+Compiling userevents_default.c
+Compiling quadflashlib.c
+Compiling debug_printf.c
+Compiling flash_interface.c
+Compiling flashlib_user.c
+Compiling userbuffermanagement.c
+Compiling audiostream.c
+Compiling endpoint0.c
+Compiling vendorrequests.c
+Compiling hostactive.c
+Compiling pdm_mic_user.c
+Compiling audioports.c
+Compiling decouple_interrupt.c
+Compiling get_adc_counts.c
+Compiling xuduser.c
+Compiling src_ff3_ds3.c
+Compiling src_ff3_os3.c
+Compiling src_mrhf_filter_defs.c
+Compiling src_mrhf_fir.c
+Compiling src_mrhf_int_arithmetic.c
+Compiling src_mrhf_asrc.c
+Compiling src_mrhf_asrc_wrapper.c
+Compiling src_mrhf_ssrc.c
+Compiling src_mrhf_ssrc_wrapper.c
+Compiling dsp_adaptive.c
+Compiling dsp_design.c
+Compiling dsp_filters.c
+Compiling dsp_math.c
+Compiling dsp_matrix.c
+Compiling dsp_statistics.c
+Compiling dsp_tables.c
+Compiling dsp_vector.c
+Compiling beclear_ambiphone.c
+Compiling beclear_srtvbf.c
+Compiling audiohw.xc
+Compiling far_end_dsp.xc
+Compiling ledctrl.xc
+Compiling userevents.xc
+Compiling beclear_int.xc
+Compiling dfu_control.xc
+Compiling keyword.xc
+Compiling testgen.xc
+Compiling vendorrequests.xc
+Compiling vf_control.xc
+Compiling QuadDeviceAccess.xc
+Compiling i2c_master.xc
+Compiling i2c_master_async.xc
+Compiling i2c_master_ext.xc
+Compiling i2c_master_single_port.xc
+Compiling i2c_slave.xc
+Compiling decimator_interface.xc
+Compiling hires_delay.xc
+Compiling pdm.xc
+Compiling fir_coefs.xc
+Compiling dfu.xc
+Compiling main.xc
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_usb_audio/main.xc:16:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+Compiling reboot.xc
+Compiling warnings.xc
+Compiling audio_io.xc
+Compiling clockgen.xc
+Compiling audiorequests.xc
+Compiling dbcalc.xc
+Compiling mixer.xc
+Compiling pdm_mic.xc
+Compiling audioports.xc
+Compiling archU_powerSaving.xc
+Compiling decouple.xc
+Compiling testct_byref.xc
+Compiling usb_buffer.xc
+Compiling xc_ptr.xc
+Compiling midiinparse.xc
+Compiling midioutparse.xc
+Compiling usb_midi.xc
+Compiling usb_midi_support.xc
+Compiling control.xc
+Compiling resource_table.xc
+Compiling src_ff3v_fir.xc
+Compiling dsp_complex.xc
+Compiling dsp_dct.xc
+Compiling dsp_idct.xc
+Compiling dsp_fft.xc
+Compiling dsp_fft_real.xc
+Compiling spi_async.xc
+Compiling spi_slave.xc
+Compiling spi_sync.xc
+Compiling XUD_EpFunctions.xc
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_EpFunctions.xc:7:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+Compiling XUD_Ports.xc
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_xud/src/XUD_Ports.xc:1:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+Compiling usb_device.xc
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:6:9: warning: 'PORT_USB_TX_READYIN' macro redefined
+#define PORT_USB_TX_READYIN      on stdcore[1]: XS1_PORT_1H
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:47:9: note: previous definition is here
+#define PORT_USB_TX_READYIN on tile[1]: XS1_PORT_1H
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:7:9: warning: 'PORT_USB_CLK' macro redefined
+#define PORT_USB_CLK             on stdcore[1]: XS1_PORT_1J
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:48:9: note: previous definition is here
+#define PORT_USB_CLK on tile[1]: XS1_PORT_1J
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:8:9: warning: 'PORT_USB_TX_READYOUT' macro redefined
+#define PORT_USB_TX_READYOUT     on stdcore[1]: XS1_PORT_1K
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:49:9: note: previous definition is here
+#define PORT_USB_TX_READYOUT on tile[1]: XS1_PORT_1K
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:9:9: warning: 'PORT_USB_RX_READY' macro redefined
+#define PORT_USB_RX_READY        on stdcore[1]: XS1_PORT_1I
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:50:9: note: previous definition is here
+#define PORT_USB_RX_READY on tile[1]: XS1_PORT_1I
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:10:9: warning: 'PORT_USB_FLAG0' macro redefined
+#define PORT_USB_FLAG0           on stdcore[1]: XS1_PORT_1E
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:51:9: note: previous definition is here
+#define PORT_USB_FLAG0 on tile[1]: XS1_PORT_1E
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:11:9: warning: 'PORT_USB_FLAG1' macro redefined
+#define PORT_USB_FLAG1           on stdcore[1]: XS1_PORT_1F
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:52:9: note: previous definition is here
+#define PORT_USB_FLAG1 on tile[1]: XS1_PORT_1F
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:12:9: warning: 'PORT_USB_FLAG2' macro redefined
+#define PORT_USB_FLAG2           on stdcore[1]: XS1_PORT_1G
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:53:9: note: previous definition is here
+#define PORT_USB_FLAG2 on tile[1]: XS1_PORT_1G
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:13:9: warning: 'PORT_USB_TXD' macro redefined
+#define PORT_USB_TXD             on stdcore[1]: XS1_PORT_8A
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:54:9: note: previous definition is here
+#define PORT_USB_TXD on tile[1]: XS1_PORT_8A
+        ^
+In file included from C:/Users/user/workspace/module_usb_device/src/usb_device.xc:6:
+In file included from C:/Users/user/workspace/module_xud/include\xud.h:20:
+C:/Users/user/workspace/module_vocalfusion\xud_conf.h:14:9: warning: 'PORT_USB_RXD' macro redefined
+#define PORT_USB_RXD             on stdcore[1]: XS1_PORT_8B
+        ^
+C:\\Users\\user\\workspace\\app_vf_spk_base\\.build_1i0o0_lin33_i2s_only_master_48khz_i2cctl\\vfspk_base_i2s_master.h:55:9: note: previous definition is here
+#define PORT_USB_RXD on tile[1]: XS1_PORT_8B
+        ^
+Compiling usb_std_requests.xc
+Compiling beclear_main_ambiphone.xc
+Compiling beclear_main_srtvbf.xc
+Compiling data_over_channel.xc
+Compiling file_over_xscope.xc
+Compiling xassert.xc
+Compiling queue.xc
+Compiling decimate_to_pcm_4ch.S
+Compiling pdm_rx.S
+Compiling write_sswitch_reg_blind.S
+Compiling lock.S
+Compiling fastmix.S
+Compiling src_ff3_fir_inner_loop_asm.S
+Compiling src_ff3v_fir.S
+Compiling src_ff3v_ds3_voice.S
+Compiling src_ff3v_us3_voice.S
+Compiling src_mrhf_adfir_inner_loop_asm.S
+Compiling src_mrhf_dither_maths_asm.S
+Compiling src_mrhf_fir_inner_loop_asm.S
+Compiling src_mrhf_fir_os_inner_loop_asm.S
+Compiling src_mrhf_spline_coeff_gen_inner_loop_asm.S
+Compiling dsp_complex_add_vector.S
+Compiling dsp_complex_fir.S
+Compiling dsp_complex_mul_vector.S
+Compiling dsp_fast_atan.S
+Compiling dsp_logistics.S
+Compiling dsp_min_vector.S
+Compiling dsp_bfp_bit_reverse_shl.S
+Compiling dsp_bfp_cls.S
+Compiling dsp_bfp_shl.S
+Compiling dsp_fft_bit_reverse.S
+Compiling dsp_fft_forward.S
+Compiling dsp_fft_inverse.S
+Compiling dsp_fft_merge_spectra.S
+Compiling dsp_fft_real_fix.S
+Compiling dsp_fft_split_spectrum.S
+Compiling dsp_fft_zero_reverse_forward.S
+Compiling dsp_long_short_conversion.S
+Compiling XUD_EpFuncs.S
+Compiling beclear_init.S
+Creating app_vf_spk_base_1i0o0_lin33_i2s_only_master_48khz_i2cctl.xe
+Constraint check for tile[0]:
+  Cores available:            8,   used:          7 .  OKAY
+  Timers available:          10,   used:          7 .  OKAY
+  Chanends available:        32,   used:         22 .  OKAY
+  Memory available:       262144,   used:      248776 .  OKAY
+    (Stack: 11028, Code: 62188, Data: 175560)
+Constraints checks PASSED.
+Constraint check for tile[1]:
+  Cores available:            8,   used:          3 .  OKAY
+  Timers available:          10,   used:          3 .  OKAY
+  Chanends available:        32,   used:         10 .  OKAY
+  Memory available:       262144,   used:      188268 .  OKAY
+    (Stack: 3380, Code: 92512, Data: 92376)
+Constraints checks PASSED.
+xmap: Warning: More than 6 cores used on a tile. Ensure this is not the case on tile running XUD.
+Build Complete
+
+15:07:59 Build Finished (took 2m:26s.183ms)
+

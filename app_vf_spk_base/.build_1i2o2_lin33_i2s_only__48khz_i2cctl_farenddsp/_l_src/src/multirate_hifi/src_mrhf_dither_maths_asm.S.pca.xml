@@ -1,0 +1,6 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/lib_src/src/multirate_hifi/src_mrhf_dither_maths_asm.S">
+  <fCall global="true" name="dither_maths_asm"/>
+  <fCall global="true" name="dither_maths_asm.nstackwords"/>
+  <fCall global="true" name="dither_maths_asm.maxcores"/>
+  <fCall global="true" name="dither_maths_asm.maxtimers"/>
+</preCompilationAnalysis>

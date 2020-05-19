@@ -1,0 +1,6 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/lib_src/src/multirate_hifi/src_mrhf_spline_coeff_gen_inner_loop_asm.S">
+  <fCall global="true" name="src_mrhf_spline_coeff_gen_inner_loop_asm"/>
+  <fCall global="true" name="src_mrhf_spline_coeff_gen_inner_loop_asm.nstackwords"/>
+  <fCall global="true" name="src_mrhf_spline_coeff_gen_inner_loop_asm.maxcores"/>
+  <fCall global="true" name="src_mrhf_spline_coeff_gen_inner_loop_asm.maxtimers"/>
+</preCompilationAnalysis>

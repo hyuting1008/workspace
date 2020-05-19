@@ -1,0 +1,7 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/module_vocalfusion/src/vf_control.xc">
+<fDef name="read_command" global="true" interface="control" noreturn="false" doNotSpecialize="false" numParams="4"/>
+<fDef name="register_resources" global="true" interface="control" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="write_command" global="true" interface="control" noreturn="false" doNotSpecialize="false" numParams="4"/>
+<fDef name="xmos_parameter_aec_tile" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="xmos_parameter_bap_tile" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
+</preCompilationAnalysis>

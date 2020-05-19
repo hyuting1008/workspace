@@ -1,0 +1,19 @@
+
+VERSION = 1.1.2
+
+DEPENDENT_MODULES = lib_device_control(>=3.2.0)
+
+LIBRARIES = xBeClear_SmartHome xBeClear_SmartTv
+
+PREBUILT_LIBRARIES_ONLY = 1
+
+EXPORT_SOURCE_DIRS = api inc src inc/xmos
+
+OPTIONAL_HEADERS += beclear_init_smarttv.h beclear_init_smarthome.h beclear_conf.h nl_model.h
+
+# static inline functions in APESobj.h are causing warning about unused functions
+MODULE_XCC_FLAGS = $(XCC_FLAGS) -Wno-unused-function
+
+#ignore host dir
+SOURCE_DIRS = src
+

@@ -1,0 +1,7 @@
+<preCompilationAnalysis file="/Users/chuangwilliam/Documents/xmos_workspaces/xvf3000_sandbox/lib_dsp/src/dsp_logistics.S">
+  <fCall global="true" name="dsp_math_logistics_fast"/>
+  <fCall global="true" name="dsp_math_logistics_fast.nstackwords"/>
+  <fCall global="true" name="dsp_math_logistics_fast.maxcores"/>
+  <fCall global="true" name="dsp_math_logistics_fast.maxtimers"/>
+  <fCall global="true" name="dsp_math_logistics_fast.maxchanends"/>
+</preCompilationAnalysis>

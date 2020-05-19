@@ -1,0 +1,17 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/module_usb_audio/endpoint0/vendorrequests.c">
+  <fCall global="true" name="VendorAudioRequests"/>
+  <fCall global="true" name="VendorAudioRequests.nstackwords"/>
+  <fCall global="true" name="VendorAudioRequests.maxcores"/>
+  <fCall global="true" name="VendorAudioRequests.maxtimers"/>
+  <fCall global="true" name="VendorAudioRequests.maxchanends"/>
+  <fCall global="true" name="VendorRequests"/>
+  <fCall global="true" name="VendorRequests.nstackwords"/>
+  <fCall global="true" name="VendorRequests.maxcores"/>
+  <fCall global="true" name="VendorRequests.maxtimers"/>
+  <fCall global="true" name="VendorRequests.maxchanends"/>
+  <fCall global="true" name="VendorRequests_Init"/>
+  <fCall global="true" name="VendorRequests_Init.nstackwords"/>
+  <fCall global="true" name="VendorRequests_Init.maxcores"/>
+  <fCall global="true" name="VendorRequests_Init.maxtimers"/>
+  <fCall global="true" name="VendorRequests_Init.maxchanends"/>
+</preCompilationAnalysis>

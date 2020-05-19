@@ -1,0 +1,8 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/lib_device_control/src/resource_table.xc">
+<fDef name="read_command" global="true" interface="control" noreturn="false" doNotSpecialize="false" numParams="4"/>
+<fDef name="register_resources" global="true" interface="control" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="resource_table_add" global="true" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="resource_table_init" global="true" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="resource_table_search" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="write_command" global="true" interface="control" noreturn="false" doNotSpecialize="false" numParams="4"/>
+</preCompilationAnalysis>

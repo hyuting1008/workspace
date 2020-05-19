@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xSCOPEconfig ioMode="basic" enabled="true">
+  <Probe name="Terminate" type="DISCRETE" datatype="INT" units="Value" enabled="true"/>
+  <Probe name="AEC File Data" type="DISCRETE" datatype="INT" units="Value" enabled="true"/>
+  <Probe name="BAP File Data" type="DISCRETE" datatype="INT" units="Value" enabled="true"/>
+</xSCOPEconfig>

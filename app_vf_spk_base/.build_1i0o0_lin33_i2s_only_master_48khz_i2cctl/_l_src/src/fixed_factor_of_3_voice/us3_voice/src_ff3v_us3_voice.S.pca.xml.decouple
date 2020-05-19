@@ -1,0 +1,15 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/lib_src/src/fixed_factor_of_3_voice/us3_voice/src_ff3v_us3_voice.S">
+  <fCall global="true" name="src_us3_voice_input_sample"/>
+  <fCall global="true" name="src_us3_voice_input_sample.nstackwords"/>
+  <fCall global="true" name="src_us3_voice_input_sample.maxcores"/>
+  <fCall global="true" name="src_us3_voice_input_sample.maxtimers"/>
+  <fCall global="true" name="src_us3_voice_input_sample.maxchanends"/>
+  <fCall global="true" name="src_us3_voice_get_next_sample"/>
+  <fCall global="true" name="src_us3_voice_get_next_sample.nstackwords"/>
+  <fCall global="true" name="src_us3_voice_get_next_sample.maxcores"/>
+  <fCall global="true" name="src_us3_voice_get_next_sample.maxtimers"/>
+  <fCall global="true" name="src_us3_voice_get_next_sample.maxchanends"/>
+  <fCall global="true" name="src_ff3v_fir_impl"/>
+  <fCall global="true" name="src_ff3v_fir_comp_us"/>
+  <fCall global="true" name="src_ff3v_fir_comp_q_us"/>
+</preCompilationAnalysis>

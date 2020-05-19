@@ -1,0 +1,939 @@
+<preCompilationAnalysis file="C:/Users/user/workspace/lib_xbeclear/src/beclear_main_ambiphone.xc">
+<fDef name="OBJ_AlignedSize" global="false" unit="C:/Users/user/workspace/lib_xbeclear/src/beclear_main_ambiphone.xc" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="OBJ_Free_C" global="false" unit="C:/Users/user/workspace/lib_xbeclear/src/beclear_main_ambiphone.xc" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="OBJ_Free_T" global="false" unit="C:/Users/user/workspace/lib_xbeclear/src/beclear_main_ambiphone.xc" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="OBJ_Malloc_C" global="false" unit="C:/Users/user/workspace/lib_xbeclear/src/beclear_main_ambiphone.xc" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="OBJ_Malloc_T" global="false" unit="C:/Users/user/workspace/lib_xbeclear/src/beclear_main_ambiphone.xc" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="OBJ_SetChunkSize" global="false" unit="C:/Users/user/workspace/lib_xbeclear/src/beclear_main_ambiphone.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="BeClear_SmartHome_AEC" global="true" noreturn="false" doNotSpecialize="false" numParams="4"/>
+<fDef name="BeClear_SmartHome_BAP" global="true" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="ReceiveData_aec" global="true" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="ReceiveData_erl" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="SendData_aec" global="true" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="SendData_erl" global="true" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="delay_microseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="delay_milliseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="delay_seconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="read_command" global="true" interface="control" noreturn="false" doNotSpecialize="false" numParams="4"/>
+<fDef name="register_resources" global="true" interface="control" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="swap_buffers" global="true" interface="beclear_if" noreturn="false" doNotSpecialize="false" numParams="0"/>
+<fDef name="transfer_samples" global="true" interface="beclear_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="write_command" global="true" interface="control" noreturn="false" doNotSpecialize="false" numParams="4"/>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="OBJ_AlignedSize" global="false" unit="C:/Users/user/workspace/lib_xbeclear/src/beclear_main_ambiphone.xc" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="1" caller="OBJ_Malloc_C" global="false" unit="C:/Users/user/workspace/lib_xbeclear/src/beclear_main_ambiphone.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="OBJ_AlignedSize" global="false" unit="C:/Users/user/workspace/lib_xbeclear/src/beclear_main_ambiphone.xc" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="1" caller="OBJ_Malloc_T" global="false" unit="C:/Users/user/workspace/lib_xbeclear/src/beclear_main_ambiphone.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecInit" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecInitApp" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_PrintInitMemory" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="131880"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="xmos_parameter_aec_tile" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="interface"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_ReadInput" global="true" numArgs="0">
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FarDelay" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecFlush" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecTrackPower" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecFilterDirect" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecFilterDirect" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="SendData_aec" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="SendData_aec" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_MicsFilterMic" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_MicsFilterMic" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_MicsFilterMic" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_MicsFilterMic" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecFilterDirect" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecFilterDirect" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="SendData_aec" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="SendData_aec" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_off" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecControlPre" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecUpdate" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecUpdate" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecUpdate" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecUpdate" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_off" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecPcd" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecControlPost" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="SendData_erl" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="1" caller="BeClear_SmartHome_AEC" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecUpdateIndex" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecFilterTail" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecFilterTail" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecFilterTail" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AecFilterTail" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_off" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_Revest" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_BapInit" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_BapInitApp" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_PrintInitMemory" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="66688"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="ReceiveData_aec" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="ReceiveData_aec" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="ReceiveData_aec" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="ReceiveData_aec" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_BapRunTimeControl" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbForceFullCstr" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbFilterPrim" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbFilterFar" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbFilterRefMic" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbUpdateDelaylineMic" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_PostProcInput" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbFilterRefMic" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbFilterRefMic" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbFilterRefMic" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbUpdateDelaylineMic" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbUpdateDelaylineMic" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbUpdateDelaylineMic" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="ReceiveData_erl" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="1" caller="BeClear_SmartHome_BAP" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_PostProcUpdate" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_Asl" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_AdjustFsbLength" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbPcd" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_PostProcApply" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_WriteOutput" global="true" numArgs="0">
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbUpdatePre" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbUpdate" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbUpdate" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbUpdate" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbUpdate" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbPowerCstr" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbCausalityCstr" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbCausalityCstr" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbCausalityCstr" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_FsbCausalityCstr" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="3"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="set_core_high_priority_on" global="true" numArgs="0">
+</fCall>
+<fCall name="BeClear_AMBIPHONE_GetFsbDelay" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="BeClear_AMBIPHONE_GetFsbDelay" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+</preCompilationAnalysis>
